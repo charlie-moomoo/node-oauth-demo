@@ -44,3 +44,4 @@ const oauth = async ctx => {
 
   ctx.response.redirect(`/welcome.html?name=${name}`);
 };
+app.use(route.get('/oauth/redirect', oauth));
